@@ -7,20 +7,11 @@ This project uses Jupyter notebooks to collect market/economic data, explore the
 1. Clone the repository and move into the project folder.
 
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/vavaviper/stock-predictions.git
 cd stock-predictions
 ```
 
 2. Create and activate a virtual environment.
-
-Windows PowerShell:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-macOS/Linux:
 
 ```bash
 python3 -m venv .venv
@@ -58,3 +49,4 @@ Suggested notebook order:
 
 - `data_collection.ipynb` downloads data from Yahoo Finance and FRED, so it needs an internet connection when you run it.
 - The model and exploration notebooks expect generated CSV files inside the `data/` folder.
+- You should have >= Python 3.12, git installed as pre-requisite of running this project
